@@ -21,6 +21,13 @@ background-size: 90%;
 }
 
 
+#container img{
+
+  width: 100%;
+  height: -webkit-fill-available;
+
+}
+
 .innerboard{
 
   border: 2px solid rgb(0, 0, 0);
@@ -30,12 +37,14 @@ background-size: 90%;
   grid-gap: 13px;
   grid-column: 1/13;
   height: auto;
+  overflow: hidden;
 }
 
 .innerboard p{
 
   border: 2px solid rgb(0, 0, 0);
   margin: 9px;
+  overflow: hidden;
 
 }
 
@@ -53,55 +62,66 @@ border: 2px solid rgb(0, 0, 0);
   .header{
         
       grid-area: header;
+      overflow: hidden;
 
     }
   .box1{
       grid-area:box1;
+      overflow: hidden;  
+      
       
   
 }
   .box2{
       
     grid-area: box2;
-
+    overflow: hidden;  
+    
 
 
 }
   .box3{
     
     grid-area:box3;
+    overflow: hidden;
   
 }
   .content2{
      
       grid-area:content2;
+      overflow: hidden;
 }
 
   .sidebar{
     
       grid-area:sidebar;
+      overflow: hidden;
     }
 
 
   .footer-s1{
       
       grid-area:footer-s1;
+      overflow: hidden;
     
     }
   .footer-s2{
       
       grid-area:footer-s2;
+      overflow: hidden;
     }
 
   .footer-s3{
       
       grid-area:footer-s3;
+      overflow: hidden;
     }
 
 
   .footer-s4{
       
       grid-area:footer-s4;
+      overflow: hidden;
     }
 
 
@@ -179,6 +199,8 @@ border: 2px solid rgb(0, 0, 0);
 
   #container {
   margin-top: 20px;
+  min-height: 0;  /* NEW */
+  min-width: 0;   /* NEW; needed for Firefox */
   row-gap: 1%;
   column-gap: 0px;
   grid-template-columns: 1fr;
