@@ -8,8 +8,7 @@ background-size: 90%;
 
 
 #container {
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: larger;
   margin: auto;
   width: 90%;
   display: grid;
@@ -17,6 +16,7 @@ background-size: 90%;
   margin-top: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 210px 210px 210px 210px;
+  margin-bottom: 40px;
 
 }
 
@@ -151,6 +151,7 @@ border: 2px solid rgb(0, 0, 0);
 
   
   #container {
+    gap: 15px;
     margin-top: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 210px 210px 210px 210px 210px;
